@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body bgcolor="#FEFAE0">
+    <header>
+        <h3 align="left">
+            <font face="Lato" size="50">SR</font>
+        </h3>
+        <h2 align="right">
+            <font face="Lato">
+                <a href="index.html">Home || </a>
+                <a href="about.html">About Me ||</a>
+                <a href="portfolio.html">Work Experience ||</a>
+                <a href="contact.html">Contact Me ||</a>
+                <a href="gallery.html">Gallery </a>
+            </font>
+        </h2>
+        <br /><br /><br /><br /><br /><br />
+    </header>
+
+    <main>
+        <section>
+            <div align="center">
+                <figure align="center"><img src="images/contact.png" alt="Your Picture" width="300"></figure>
+                <p align="center"><strong>Contact Me</strong></p>
+            </div>
+            <div style="text-align: center;">
+                <a href="https://github.com/sakshamrai101"><img src="images/git.png" alt="GitHub" width="40"></a>
+                <a href="https://www.linkedin.com/in/saksham-rai-4477431ab/"><img src="images/linkedIn.png"
+                        alt="LinkedIn" width="40"></a>
+                <a href="https://twitter.com/home"><img src="images/twitter.jpeg" alt="Twitter" width="40"></a>
+                <a href="https://instagram.com/yourinstagram"><img src="images/ig.jpeg" alt="Instagram" width="40"></a>
+            </div>
+            <form style="text-align: center;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+            <hr>
+        <center>
+        <label for="option">Do you like my website?</label>
+        <select id="option" name="option">
+            <option value="option1">Yes, its amazing!</option>
+            <option value="option2">Yeah, but needs improvement.</option>
+            <option value="option3">Naah, its filth.</option>
+        </select><br><br>
+        
+        <datalist id="strongest-creature">
+            <option value="Grizzly Bear">
+            <option value="Hippopotamus">
+            <option value="Silverback Gorilla">
+            <option value="Lion">
+            <option value="Elephant">
+        </datalist>
+        <label for="strongest-creature">Who would you fancy in a fight?</label>
+        <input list="strongest-creature" id="strongest-creature" name="strongest-creature"><br><br>
+        
+        </center>
+         </section>
+       
+        </main>
+        
+        <center>
+            <footer>
+                <p>&copy; 2023 Saksham's Portfolio. All rights reserved.</p>
+            </footer>
+        </center>
+        
+        <script src="script.js"></script>
+</body>
+
+</html>
