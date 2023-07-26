@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saksham's Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<!--page does not validate becasue of bacgkround image. But I want to include this image. -->
-<body style="background-image: url('bg.jpeg');">
-    <br />
-    <header>
-        <h3>SR</h3>
-        <h2>
-            <a href="index.html">Home || </a>
-            <a href="about.html">About Me ||</a>
-            <a href="portfolio.html">Work Experience ||</a>
-            <a href="contact.html">Contact Me ||</a>
-            <a href="gallery.html">Gallery </a>
-        </h2>
-        <br><br><br><br><br><br><br><br>
-    </header>
-    <br><br><br><br><br><br><br><br>
-    <h1 style="align-content: center; color: #34568B;">
-            Namaskar!
-    </h1>
-    <h3 style="align-content: center; color: #9B2335;">Apka Swagat Hai</h3>
-    <footer>
-        <p>&copy; 2023 Saksham's Website. All rights reserved.</p>
-    </footer>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Saksham's Portfolio Website</title>
+        <link rel="stylesheet" href="css/style.css"> 
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">SR</h1>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="portfolio.html">Work Experience</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+        <div class="content-container">
+            <section class="text-content">
+                <p><code>>>Console.log.out(greeting_hindi)</code><br>
+                   >>Namaskar, Swagat hai Apka!
+                </p>    
+            </section>
+            <figure class="image-container">
+                <img class="h_image" src="images/avatar.png" width="400px" height="400px">
+                <figcaption><br><br><br><br><br><br><br><br><br><br>AI-generated Simpsons avatar of me.</figcaption>
+            </figure>
+        </div>
+        <footer>
+            <p>&copy; 2023 Saksham's Website. All rights reserved.</p>
+        </footer>
 </html>
