@@ -2,95 +2,60 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham's Portfolio Website-> Gallery_Page</title>
+    <link rel="stylesheet" href="css/gallery.css">
 </head>
 
-<body style:"background-color:#FEFAE0">
-<header>
-<h3>SR</h3>
-<h2>
-    <a href="index.html">Home || </a>
-    <a href="about.html">About Me ||</a>
-    <a href="portfolio.html">Work Experience ||</a>
-    <a href="contact.html">Contact Me ||</a>
-    <a href="gallery.html">Gallery</a>
-</h2>
-<br><br><br><br><br><br>
-</header>
+<body>
+    <header>
+        <h1 class="logo">SR</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">Work Experience</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
 
 <main>
-<section>
-    <h1><u>Recollections</u></h1>
-    <fieldset>
-        <legend>Image Gallery</legend>
-        <table>
-            <tr>
-            <td>
-                <figure>
-                    <img src="hack.jpg" alt="Image 1" width="300">
-                    <figcaption>SDX-AI Hackathon 2023</figcaption>
-                </figure>
-            </td>
-            <td>
-                <figure>
-                    <img src="zoo.JPG" alt="Image 2" width="300">
-                    <figcaption>San Diego Zoo</figcaption>
-                </figure>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <figure>
-                    <img src="work.jpg" alt="Image 3" width="300">
-                    <figcaption>Karya-Meeting</figcaption>
-                </figure>
-            </td>
-            <td>
-                <figure>
-                    <img src="family.JPG" alt="Image 4" width="300">
-                    <figcaption>Family</figcaption>
-                </figure>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <figure>
-                    <img src="six_flags.jpg" alt="Image 5" width="300">
-                    <figcaption>Siz Flags</figcaption>
-                </figure>
-            </td>
-            <td>
-                <figure>
-                    <img src="india.jpg" alt="Image 6" width="300">
-                    <figcaption>Indian Fam</figcaption>
-                </figure>
-            </td>
-        </tr>
-    </table>
-</fieldset>
-</section>
+    <section>
+        <h1><u><br>Recollections</u></h1>
+        <div class="gallery-wrapper">
 
-<legend>Having Fun with Tags</legend>
-<fieldset>
-        
-        <iframe src="https://www.youtube.com/embed/watch?v=WR1ydijTx5E" width="800" height="600"></iframe>
-        
-        <audio controls>
-            <source src="audio.m4a" type="audio/mpeg">
-        </audio>
-        
-        <video controls width="800" height="600">
-            <source src="grizzly.MP4" type="video/mp4">
-        </video>
-        
-        <canvas id="myCanvas" width="800" height="600"></canvas>
-        
-        <svg width="300" height="300">
-            <circle cx="200" cy="200" r="100" fill="green" />
-        </svg>
-</fieldset>
+            <figure class="gallery-item">
+                <img src="images/hack.jpg" alt="Image 1" width="300">
+                <figcaption>SDX-AI Hackathon 2023</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/zoo.JPG" alt="Image 2" width="300">
+                <figcaption>San Deigo Zoo</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/work.jpg" alt="Image 3" width="300">
+                <figcaption>Karya-Meeting</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/family.JPG" alt="Image 4" width="300">
+                <figcaption>Family</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+                <img src="images/six_flags.jpg" alt="Image 5" width="300">
+                <figcaption>Six Flags</figcaption>
+            </figure>
+        </div>
+    </section>
 </main>
 
 
