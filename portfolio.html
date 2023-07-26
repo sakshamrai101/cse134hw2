@@ -1,132 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Experience</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Saksham's Portfolio Website-> Work_Exp</title>
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
-<body style="background-color: #FEFAE0">
-            <header>
-                <h3>SR</h3>
-                <h2>
-                    <a href="index.html">Home || </a>
-                    <a href="about.html">About Me ||</a>
-                    <a href="portfolio.html">Work Experience ||</a>
-                    <a href="contact.html">Contact Me ||</a>
-                    <a href="gallery.html">Gallery </a>
 
-                </h2>
-                <br><br><br><br><br><br><br><br>
-            </header>
-    <h1>Work Experience</h1>
+<body>
+    <header>
+        <h1 class="logo">SR</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">Work Experience</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <main>
+        <section class="experience-container">
 
-    <h2>Employment Experience</h2>
-    <ul>
-        <li>
-            <strong>Karya-Productivity</strong> - Founder, CTO (March 2023 - Present)
-            <ul>
-                <li>Karya is an AI-based web application that leverages LLMs on existing robust accademic data to create efficient study practices
-                    for students.
-                </li>
-                <li>Affiliated with the official UCSD incubator - The Basement.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>San Diego Police County</strong> - Software Engineer (Decemeber 2022 - Present)
-            <ul>
-                <li>Developing the official Harm Reduction Coalition San Diego website on the AWS server to fit the needs of HRCSD Naloxone
-                    Distribution Program</li>
-                <li>Utilized CSS, HTML to design the landing page of the website with navigation bars, animations, embedded videos, and
-                other custom functionality. -> https://sdnaloxone.org</li>
-                <li>Utilized php to develop a registration system for users and phpMyAdmin and SQL to maintain user information and assign
-                unique IDS for accessing vending machines. Successfully registered 10,000 + users.</li>
-                <li>Utilized php to develop a registration system for users and phpMyAdmin and SQL to maintain user information and
-                    assign unique IDS for accessing vending machines. Successfully registered 10,000 + users.</li>
-                <li>Onboard vending machines into the back end of the website and help provide data dump to UCSD monthly.</li>
-                <li>Create QR codes for the vending machines to link to the website for naloxone and other harm reduction services.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Information Technology Services, UC San Diego</strong> - Cloud System Architect, (Sept 2022 - Dec 2022)
-            <ul>
-                <li>Utilized EPBC Dashboard and Reports to plan and authorize budget for several UCSD ventures for the current financial
-                year.</li>
-                <li>Utilized Groovy language to develop scripts to do budget calculations, form data maps and propagate intercube pushes.</li>
-                <li>Used Jira to create/resolve issues and epic for creating ramp-up trainings for other employees, team meetings, etc.</li>
-                <li>Utilized EMP Automate Batch Scripts to encrypt passwords to be referenced by other files, updating existing version of
-                Oracle EPM automate, etc.</li>
-            </ul>
-        </li>
-    </ul>
+            <h2><u>Job Experience</u></h2>
+            <figure class="experience-card">
+                <img src="images/HRCSDLogo.png" alt="Job Experience 1" height="400px" width="400px">
+                <figcaption>
+                    <h3>County of San Diego</h3>
+                    <p>Developed the Naloxone Distribution website, 
+                        enabling the registration and delevery of product to 5000+ users. <br>
+                        <a href="sdnaloxone.org">SDNaloxone</a>
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="experience-card">
+                <img src="images/logo.png" alt="Job Experience 2" height="400px" width="400px">
+                <figcaption>
+                    <h3>Karya-Productivity</h3>
+                    <p>Basement-affiliated startup, building nearul nets to fine tune effective studying practises for college students. <br>
+                    <a href="https://www.figma.com/file/9ZGwTW3Sg5ZUxwKTiwyDzr/Karya---Prototype?node-id=0%3A1&mode=dev">Figma-Mockup</a> <br>
+                      <a href="www.karya-productivity.com">Karya-Website</a>
+                    </p>
+                </figcaption>
+            </figure>
 
-    <h2>Side Projects</h2>
-    <ul>
-        <li>
-            <pre><strong>Talk-to-Abel</strong></pre> - AI-based Content Tutoring <a href="https://talktoabel.com/">AudioBot</a>
-            <ul>
-                <li>Utilising the OpenAi library, helped develop a speech recognition audio chatbot that converses in multiple languages.</li>
-                <li>Added custom prompts of a Smart Study Assistant for delivering interactive lessions in different languages.</li>
-                <li>Got shortlisted in the list of 10 best Projects at the SDx AI hackathon.</li>
-            </ul>
-        </li>
-        <li>
-            <pre><strong>Social Compass</strong></pre> - Android Application
-            <ul>
-                <li>Developed an Android application using Java and UCSD location API in Android Studio, that allows users to register and
-                find friends on a radial compass UI that changes dynamically with movement</li>
-                <li>Utilized Junit and Robolectric frameworks for unit testing and Espresso for UI testing.</li>
-                <li>Utilized SQL for updating remote database with longitudes, latitudes, usernames, relative distances etc.</li>
-                <li>Utilized Database Access Object to perform persistence operations of adding, deleting, updating location of users.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>Research Experience</h2>
-    <ul>
-        <li>
-            <strong>International Journal of Innovations In Scientific Engineering</strong>
-            <ul>
-                <li>“Code Cloning Techniques In The Development of Large-Scale Software Systems.” International Journal of Innovations In
-                Scientific Engineering (IJISE), Vol 09, Jan-Jun 2019, Paper code: IJISE/46023, e-ISSN: 2454-6402/ p-ISSN:2454-812X</li>
-            </ul>
-        </li>
-        <li>
-            <strong>International Journal of Innovations in Applied Sciences and Engineering (IJIASE)</strong>
-            <ul>
-                <li>“Bio-informatic Techniques in the Early Detection of Cancer.” International Journal of Innovations in Applied Sciences
-                and Engineering (IJIASE), Vol 03, Issue 01, January-March 2019, Paper Code: IJIASE/47023, e-ISSN: 2454-9258/ p-
-                ISSN:2454-809X.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>International Journal of Innovations in Applied Sciences and Engineering (IJIASE)</strong>
-            <ul>
-                <li>“Classification techniques in Content – Based Image Retrieval.” International Journal of Inventions In Engineering &
-                Science Technology (IJIEST), Vol 04, January-December, 2018, Paper code: IJIEST/47515, e-ISSN: 2454-9584/ p-ISSN:2454-
-                8111</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>Volunteer Experience</h2>
-    <ul>
-        <li>
-            <strong>Engineers for Exploration</strong> - Web Developer (Jan 2022 - March 2022)
-            <ul>
-                <li>Expanded the exisiting functianality on the official E4E UCSD website.</li>
-                <li>Created a registration system for the Pyrenote project.</li>
-            </ul>
-        </li>
-        <li>
-            <strong>Speech and Debate</strong> - Team Member (Decemeber 2021 - Present)
-            <ul>
-                <li>Participated in intercollegiete Debate representing UCSD in IPDA, Impromptu and British Parli debate.</li>
-                <li>Attended practises, meetings, mixers etc. Got CCR credit.</li>
-            </ul>
-        </li>
-    </ul>
-
-</body>
+        </section>
+        
+        <section class="experience-container">
+            <h2><u>Technical Projects</u></h2>
+            <figure class="experience-card">
+                <img src="images/abel.png" alt="Technical Project 1" height="400px" width="400px">
+                <figcaption>
+                    <h3><a href="https://talktoabel.com/">Talk-to-Abel</a></h3>
+                    <p> Contributed in building an AI-based content tutoring speechbot that <br>
+                        allows delivery of educational content in multiple languages and 
+                        personalities. Got shortlisted in top 5 projects at <br>x
+                        the SDX-AI hackathon. 
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="experience-card">
+                <img src="images/breaking_bad.png" alt="Technical Project 1" height="500px" width="500px">
+                <figcaption>
+                    <h3><a href="https://bcharb.netlify.app/">Breaking Bad Trivia</a></h3>
+                    <p> Utilising React, JS and the official Breaking Bad API, <br>
+                        to create a trivia web application which allows 
+                        for fun games based on the events of the show. 
+                    </p>
+                </figcaption>
+            </figure>
+        </section>
+        
+        <section class="experience-container">
+            <h2><u>Research Experience</u></h2>
+            <figure class="experience-card">
+                <img src="images/big_data.png" alt="Research Experience 1" height="500px" width="500px">
+                <figcaption>
+                    <h3>Big Data Analysis</h3>
+                    <p>“AN ANALYSIS OF THE ‘BIG DATA ANALYSIS TECHNIQUES TO ENHANCE ITS EFFECTIVE IMPLEMENTATION”</p>
+                </figcaption>
+            </figure>
+            <figure class="experience-card">
+                <img src="images/code-cloning.png" alt="Research Experience 2">
+                <figcaption>
+                    <h3>Code Cloning</h3>
+                    <p>EMPLOYABILITY OF ‘CODE CLONING’ TECHNIQUES IN THE DEVELOPMENT OF LARGE SCALE SOFTWARE SYSTEMS</p>
+                </figcaption>
+                </figure>
+        </section>
+    </main>
 
 </html>
