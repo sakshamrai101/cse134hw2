@@ -4,103 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Saksham's Portfolio Website - About Me</title>
+    <link rel="stylesheet" href="css/about.css">
 </head>
 
-<body style="background-color: #FEFAE0">
+<body>
     <header>
-        <h3>SR</h3>
-        <h2>
-            <a href="index.html">Home || </a>
-            <a href="about.html">About Me ||</a>
-            <a href="portfolio.html">Work Experience ||</a>
-            <a href="contact.html">Contact Me ||</a>
-            <a href="gallery.html">Gallery </a>
-        </h2>
-        <br><br><br><br><br><br><br><br>
+        <h1 class="logo">SR</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="portfolio.html">Work Experience</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
-
     <main>
-        <section>
-            <h1><u>About Me</u></h1>
-            <p>
-                Hi, I am Saksham, a third-year student at <i>UC San Diego</i> majoring in
-                Mathematics-CS with a double minor in Cognitive Science and Innovation and Entrepreneurship. I am
-                passionate about
-                technology, mostly leveraging web-dev technologies to build cool and helpful things. Fun-fact, I
-                recently attended the SDx-AI
-                hackathon held at the Design and Innocation building at UCSD!
-            </p>
-            <p>
-                I aim to achieve proficiency in the space of web development, so I am able to deliver high-performance
-                scalable web applications and websites for exceptional user experience. Here is my skill breakdown:
-            </p>
+        <section class="intro">
+            <div class="content-wrapper intro-wrapper">
+                <img src="images/about.JPEG" alt="Saksham's Picture">
+                <h2>Howdy, my fellow developers and designers!</h2>
+                <p class="intro-text">
+                    I'm Saksham, a third-year CS student here at <strong>UC San Diego</strong> with a keen interest in
+                    developing
+                    beautiful and efficient, scalable websites and web applications for the best user experience. Currently,
+                    exploring deep learning concepts like <b>SVD</b> and <b>ALS</b> in order to design a precise recommendation system for
+                    my startup ->
+                    <b>Karya-Productivity.</b>
+                </p>
+                <a href="#" class="download-cv">Download My CV</a>
+            </div>
         </section>
-            <table>
-                <tr>
-                    <colgroup>
-                        <th>Technology - Front End</th>
-                        <th>html</th>
-                        <th>css</th>
-                        <th>javaScript</th>
-                        <th>React</th>
-                    </colgroup>
-                </tr>
-                <tr>
-                    <td><b>Skill</b></td>
-                    <td>* * * * </td>
-                    <td>* * * *</td>
-                    <td>* * * </td>
-                    <td>* * * </td>
-                </tr>
-                <tr>
-                    <th>Technology - Back End</th>
-                    <th>php</th>
-                    <th>java</th>
-                    <th>c++</th>
-                    <th>Node.js</th>
-                </tr>
-                <tr>
-                    <td><b>Skill</b></td>
-                    <td>* * * * </td>
-                    <td>* * * *</td>
-                    <td>* * * </td>
-                    <td>* * * </td>
-                </tr>
-                <tr>
-                    <th>Technology - Misc</th>
-                    <th>SQL</th>
-                    <th>git</th>
-                    <th>Android Studio</th>
-                    <th>Figma</th>
-                </tr>
-                <tr>
-                    <td><b>Skill</b></td>
-                    <td>* * * * * </td>
-                    <td>* * * * *</td>
-                    <td>* * * *</td>
-                    <td>* * * </td>
-                </tr>
-            </table>
-        <section>
-            <h1><u>Interests and Hobbies</u></h1>
-            <p>
-                When I am not studing or <code>coding</code>, you can mostly find me working out at the <em><b>24HR
-                        Fitness Center.</b></em>
-                In addition to this, I enjoy <i><b>intercollegiete debate</b></i>. Interestingly, I was a part of the
-                UCSD Speech and Debate team for over a year! I also like
-                <i><b>going on drives, playing football </b></i>(yes, I call it football not soccer) and <i><em>going
-                        out with my girlfriend</em></i>. I also like <i><b>MMA and boxing</b></i> and I have heard
-                San Digeo has a lot of retro-style boxing gyms. I would appreciate any suggestions!
-
-                A very obscure hobby of mine is going for <i><b>ghost hunting</b></i>. There are a lot of paranormal
-                places in SD such as the Whaley House and the Winchestor Museum.
-            </p>
+    
+        <hr>
+    
+        <section class="skills">
+            <div class="content-wrapper skills-wrapper">
+                <h2><u>Relevant Skill Levels</u></h2>
+                <p class="skill">HTML</p>
+                <p class="progress html">90%</p>
+                <p class="skill">CSS</p>
+                <p class="progress css">60%</p>
+                <p class="skill">JavaScript</p>
+                <p class="progress js">65%</p>
+                <p class="skill">Java</p>
+                <p class="progress java">95%</p>
+                <p class="skill">php</p>
+                <p class="progress php">75%</p>
+            </div>
+        </section>
+    
+        <hr>
+    
+        <section class="contact">
+            <div class="content-wrapper contact-wrapper">
+                <h2><u>Get in Touch with Me</u></h2>
+                <form>
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="fab-links">
+                    <a href="https://github.com/sakshamrai101" class="fab-github">GitHub</a>
+                    <a href="https://www.linkedin.com/in/saksham-rai-4477431ab/" class="fab-linkedin">LinkedIn</a>
+                    <a href="https://twitter.com/sakshamrai2001" class="fab-twitter">Twitter</a>
+                </div>
+            </div>
         </section>
     </main>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
